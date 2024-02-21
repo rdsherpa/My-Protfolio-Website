@@ -1,0 +1,393 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+/* .navbar-nav {
+  margin-left: auto;
+} */
+
+body {
+  position: relative;
+}
+
+.hero {
+  background-image: url('img/andrew-neel-cckf4TsHAuw-unsplash.jpg'); /* Replace 'background.jpg' with your actual background image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 100px 0; /* Adjust padding as needed */
+}
+
+.hero-content {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.headshot {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  border: 4px solid white; /* Adds a white border around the image */
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em; 
+  margin-bottom: 15px; 
+  margin-top: 53px; /* had some issue not being able to not cover my name and tagline by headshot, so had to use this which helped to bring h1 downward */
+}
+
+.hero-content .tagline {
+  font-size: 1.5em; 
+}
+
+/*adding a box shadow to the tagline and my name so that it is more visible  */
+.hero-content {
+  color: #fff; /* Sets text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+}
+
+/*Animation  */
+.flip-container {
+  margin: 0 auto;
+  padding-top: 50px;
+  perspective: 1000;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.flip-container,
+.front,
+.back {
+  width: 150px;
+  height: 150px;
+}
+
+.front {
+  z-index: 1;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.back {
+  background-color: red;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}
+
+/* Style for the groups */
+.group {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  background-image: linear-gradient(120deg, #f6d365, #fda085); /* Gradient background */
+}
+
+.group:nth-child(odd) {
+  background-image: linear-gradient(120deg, #84fab0, #8fd3f4); /* Gradient background */
+}
+
+
+/* Additional styling for the last group to remove the margin-bottom */
+.group:last-child {
+  margin-bottom: 0;
+}
+
+
+.mission-section h2 {
+  text-align: center;
+}
+
+.mission-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mission-section .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Adding margin to the image on small screens */
+.mission-section img {
+  margin-top: 20px;
+}
+
+/* Adding margin to the text on medium screens and above */
+@media (min-width: 768px) {
+  .mission-section .text-md-start p {
+    margin-top: 20px;
+  }
+}
+
+.skill-section h2 {
+    text-align: center;
+}
+
+.skill-card {
+    padding: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 40px 0;
+}
+
+section#about-me {
+  background-color: #fafafa;
+  padding: 4px 0;
+}
+
+section#works {
+  background-color: #d4d4d4;
+}
+
+section#testimonials {
+  background-color: #fafafa;
+}
+
+section#contact {
+  background-color: #fafafa;
+}
+
+.skill-section {
+  background-color: lightblue;
+}
+
+.mission-section {
+  background-color: lightgoldenrodyellow;
+}
+
+#contact {
+  margin-top: 40px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 15px;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #007bff; /* Link color */
+}
+/* 
+#contact a:hover {
+  text-decoration: underline;
+} */
+
+#about-me-target,
+#works-target,
+#testimonials-target,
+#contact-target {
+  position: relative;
+  top: -100px;
+}
+
+.social-icons {
+  text-align: center;
+  display: block;
+  margin: 10px; 
+  font-size: 24px;
+}
+/*unable to remove the underline that it makes when I hover over  */
+.social-icon span {
+  text-decoration: none;
+}
+
+.social-icon:hover .bi,
+.social-icon:hover span {
+  color: red; 
+  text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+    color: #333; 
+}
+
+
+#about-me, #works, #contact, #testimonials, #contact {
+  text-align: center;
+}
+
+.testimonial {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.star {
+    color: #ffd700; /* Yellow color for filled stars */
+    font-size: 20px;
+}
+
+.author {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/*selecting carousle-item class and image element within that  */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center; /* I used this object-fit and position so that image is not squeezed */;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  /* background:rgba(0,0,0,0.5); */
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+/*I had to use .carousel-dark because it didn't allow me to make the carousel caption white with just .carousel-caption: white  */
+.carousel-dark .carousel-caption {
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* filter: invert(100%); */
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+/* .carousel-control-prev-icon .carousel-control-next-icon {
+  color: white;
+} */
+
+.carousel-control-prev {
+  color: white;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Works section styles */
+/* Works section styles */
+#works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work {
+  position: relative;
+  width: 300px; /* Set the width of each work block */
+  height: auto; /* Allow the height to adjust based on content */
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #ccc; /* Add a border to the work block */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.work-overlay {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-overlay img {
+  width: 100%;
+  height: auto; /* Ensure the image maintains its aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.work-overlay .overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px; /* Add border-radius for overlay text */
+  transition: opacity 0.3s ease;
+}
+
+.work-overlay:hover img {
+  transform: scale(1.1);
+}
+
+.work-overlay:hover .overlay-text {
+  opacity: 0;
+}
+
+
+

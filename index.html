@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="milestone" content="Portfolio">
+  <!-- TODO: Replace this with your title -->
+  <title> Riwa Sherpa's Profile</title>
+  <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+      https://getbootstrap.com/docs/5.3/getting-started/introduction/
+		-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!--Bootstrap Icons  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom styles (these can extend the default Bootstrap styles) -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Scroll Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<!--we are targeting .navbar  -->
+
+<body class="scroll-top" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+  <!-- TODO: Paste Navbar code and customize links -->
+  <!--the reason for using expand-md is to exaplin that nav-bar should expand when it is in wider screen and collapse when in small screen  -->
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a href="#home" class="navbar-barnd">
+        <i class="bi bi-house-door"></i>
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav-collapse" class="collapse navbar-collapse">
+        <!--ms-auto helps to make a space between home icon and then nav menus so that they are not together  -->
+        <div class="navbar-nav ms-auto">
+          <a href="#about-me-target" class="nav-link">About Me</a>
+          <a href="#works-target" class="nav-link">Works</a>
+          <a href="#testimonials-target" class="nav-link">Testimonials</a>
+          <a href="#contact-target" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Hero section -->
+  <header id="home">
+    <section id="hero-section">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="front">
+                <img src="img/IMG_0079.jpg" alt="Headshot" class="headshot">
+              </div>
+              <div class="back">
+                <img src="img/IMG_0079.jpg" alt="Headshot" class="headshot">
+              </div>
+            </div>
+          </div>
+          <h1 data-aos="flip-up" data-aos-duration="2000">Riwa Dorjee Sherpa</h1>
+          <p class="tagline">Crafting Digital Dreams Into Reality"</p>
+          <!-- <button type="button" class="btn btn-outline-info">Learn More</button> -->
+          <!-- I added the below code so that when the user clicks on learn more button, it leads them to more about me section.  -->
+          <a href="#about-me-target" class="btn btn-outline-info">Learn More</a>
+        </div>
+    </section>
+  </header>
+
+
+  <!--About Me -->
+  <!-- <section id="about-me">
+    <div id="about-me-target"></div>
+    <div class="container">
+      <h1 data-aos="zoom-in" data-aos-duration="2000">About Me</h1>
+      <p>
+        Hello there! I'm Riwa Dorjee Sherpa, a passionate web developer with a knack for crafting elegant and efficient
+        digital solutions. With a blend of creativity and technical expertise, I thrive on turning ideas into reality
+        through the power of code.
+      </p>
+
+      <h3>What I Do:</h3>
+      <p>
+        Design: I believe that user experience is paramount. I specialize in creating intuitive and visually appealing
+        designs that not only captivate users but also enhance their interaction with the digital world.
+      </p>
+
+      <h3>Development: </h3>
+      <p>
+        From front-end to back-end, I'm proficient in a range of technologies including HTML, CSS, JavaScript, and
+        framework like react. I have a keen eye for detail and am committed to writing clean, scalable code that ensures
+        optimal performance.
+      </p>
+
+
+      <h3>Problem-solving:</h3>
+      <p>
+        Every project comes with its unique challenges, and I relish the opportunity to tackle them head-on. Whether
+        it's optimizing website speed, implementing complex features, or troubleshooting bugs, I approach each problem
+        with patience and determination until I find the best solution.
+      </p>
+
+      <h3>My Approach:</h3>
+      Collaboration: I believe in the power of teamwork. I enjoy collaborating with clients and fellow developers to
+      understand their vision and bring it to life. By fostering open communication and embracing feedback, I ensure
+      that every project exceeds expectations.
+
+      <h3>Continuous Learning:</h3> The world of web development is constantly evolving, and I'm committed to staying
+      ahead of the curve. Whether it's learning new programming languages, exploring emerging technologies, or honing my
+      design skills, I'm always eager to expand my knowledge and grow as a developer.
+
+      <h3>Passion:</h3> Web development isn't just a job for me – it's my passion. I love what I do, and that passion is
+      reflected in the quality of my work. Whether I'm building a simple landing page or a complex web application, I
+      approach each project with enthusiasm and dedication.
+
+      <h3>Let's Connect:</h3>
+      <p>
+        If you're looking for a web developer who is not only skilled but also genuinely passionate about creating
+        exceptional digital experiences, I'd love to hear from you. Let's collaborate and turn your ideas into reality!
+      </p>
+    </div>
+  </section> -->
+
+  <!-- I used this section because I want it to be more readable -->
+
+  <section id="about-me">
+    <div id="about-me-target"></div>
+    <div class="container">
+      <h1 data-aos="zoom-in" data-aos-duration="2000">About Me</h1>
+      <p>
+        Hello there! I'm Riwa Dorjee Sherpa, a passionate web developer with a knack for crafting elegant and efficient
+        digital solutions. With a blend of creativity and technical expertise, I thrive on turning ideas into reality
+        through the power of code.
+      </p>
+
+      <!-- Group 1: What I Do and Development -->
+      <div class="group">
+        <h3>What I Do:</h3>
+        <p>
+          Design: I believe that user experience is paramount. I specialize in creating intuitive and visually appealing
+          designs that not only captivate users but also enhance their interaction with the digital world.
+        </p>
+
+        <h3>Development: </h3>
+        <p>
+          From front-end to back-end, I'm proficient in a range of technologies including HTML, CSS, JavaScript, and
+          framework like react. I have a keen eye for detail and am committed to writing clean, scalable code that ensures
+          optimal performance.
+        </p>
+      </div>
+
+      <!-- Group 2: Problem-solving and My Approach -->
+      <div class="group">
+        <h3>Problem-solving:</h3>
+        <p>
+          Every project comes with its unique challenges, and I relish the opportunity to tackle them head-on. Whether
+          it's optimizing website speed, implementing complex features, or troubleshooting bugs, I approach each problem
+          with patience and determination until I find the best solution.
+        </p>
+
+        <h3>My Approach:</h3>
+        <p>
+          Collaboration: I believe in the power of teamwork. I enjoy collaborating with clients and fellow developers to
+          understand their vision and bring it to life. By fostering open communication and embracing feedback, I ensure
+          that every project exceeds expectations.
+        </p>
+      </div>
+
+      <!-- Group 3: Continuous Learning and Passion -->
+      <div class="group">
+        <h3>Continuous Learning:</h3>
+        <p>
+          The world of web development is constantly evolving, and I'm committed to staying
+          ahead of the curve. Whether it's learning new programming languages, exploring emerging technologies, or honing my
+          design skills, I'm always eager to expand my knowledge and grow as a developer.
+        </p>
+
+        <h3>Passion:</h3>
+        <p>
+          Web development isn't just a job for me – it's my passion. I love what I do, and that passion is
+          reflected in the quality of my work. Whether I'm building a simple landing page or a complex web application, I
+          approach each project with enthusiasm and dedication.
+        </p>
+      </div>
+
+      <!-- Let's Connect -->
+      <h3>Let's Connect:</h3>
+      <p>
+        If you're looking for a web developer who is not only skilled but also genuinely passionate about creating
+        exceptional digital experiences, I'd love to hear from you. Let's collaborate and turn your ideas into reality!
+      </p>
+    </div>
+  </section>
+
+  <!--Mission Section  -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Mission Statement</h2>
+          <div class="text-md-start">
+            <p>
+              My mission as a web developer is to blend creativity, functionality, and innovation to craft bespoke
+              digital experiences that resonate with users and elevate brands. With a focus on understanding my clients'
+              unique needs and goals, I aim to deliver solutions that not only meet but exceed their expectations.
+              Through continuous learning and collaboration, I aspire to contribute positively to the ever-evolving web
+              landscape, driving impactful results and fostering long-lasting relationships with my clients.
+            </p>
+          </div>
+        </div>
+        <!-- I used md-6  which means that on medium-sized screens (md), it will occupy 6 out of 12 columns, taking up half of the available widht of its parent container. -->
+        <div class="col-md-6 mt-4 mt-md-0">
+          <img src="img/emile-perron-xrVDYZRGdw4-unsplash.jpg" data-aos="fade-right" data-aos-duration="2000"
+            class="img-fluid" alt="Mission Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="skill-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="row">
+        <!-- Skill 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card text-center">
+            <h5>HTML</h5>
+            <i class="fab fa-html5 fa-3x"></i>
+            <p class="text-center">Structuring the web's content using modern semantic HTML</p>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card text-center">
+            <h5>CSS</h5>
+            <i class="fab fa-css3-alt fa-3x"></i>
+            <p class="text-center">Presenting beautiful web designs and interactions using modern CSS.</p>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card text-center">
+            <h5>Bootstrap</h5>
+            <i class="fab fa-bootstrap fa-3x"></i>
+            <p class="text-center">Rapidly developing responsive websites using the web's most popular framework.</p>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="skill-card text-center">
+            <h5>Java Script</h5>
+            <i class="fab fa-js fa-3x"></i>
+            <p class="text-center">Making interactive experiences, games, web apps, and more using javascript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <!-- <section id="works">
+    <div id="works-target"></div>
+    <div class="container">
+      <h2>Works</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card" onclick="window.location.href='your_project_url_1';">
+            <img src="img/Hotel-Website-Project.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dream House</h5>
+              <p class="card-text">This website allows you to book a house and rent it. Great deal for your vacation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" onclick="window.location.href='your_project_url_2';">
+            <img src="img/Skull-capz.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Skull-Cap</h5>
+              <p class="card-text">This website was designed for a band where it shows their events and from where
+                people can book their tickets.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Works section -->
+  <section id="works">
+    <!-- Target for smooth scrolling -->
+    <div id="works-target"></div>
+
+    <!-- Container to hold the works section -->
+    <div class="container">
+      <!-- Heading for the works section -->
+      <h2 class="text-center">Works</h2>
+
+      <!-- Bootstrap grid for responsive layout -->
+      <!-- Centering wrapper for the row -->
+      <!-- added d-flex justify-content-center to a  wrapping div to center it's child elements horizontally using flexbox -->
+      <!-- This wrapper ensures that the row of work blocks is centered within the contianer -->
+      <div class="d-flex justify-content-center">
+        <div class=" text-center row row-cols-1 row-cols-md-2 g-4">
+
+          <!-- First work block -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <!-- Individual work item -->
+            <div class="work">
+              <!-- Content for the first work block -->
+              <a href="https://rdsherpa.github.io/Beaulah-s-Bakery/">
+                <div class="work-overlay">
+                  <img src="img/Bakery Beaulah's.png" data-aos="fade-up" data-aos-duration="2000" alt="Project 1 Cover">
+                  <div class="overlay-text">Katie's Bakery</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Second work block -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <!-- Individual work item -->
+            <div class="work">
+              <!-- Content for the second work block -->
+              <a href="https://rdsherpa.github.io/Fran-s-Flower/">
+                <div class="work-overlay">
+                  <img src="img/fran's flower.png" data-aos="fade-left" data-aos-duration="2000" alt="Project 2 Cover">
+                  <div class="overlay-text">Fran's Flower</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Third work block -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <!-- Individual work item -->
+            <div class="work">
+              <!-- Content for the third work block -->
+              <a href="https://rdsherpa.github.io/skull-captz-tour/">
+                <div class="work-overlay">
+                  <img src="img/Skull-capz.png" data-aos="fade-right" data-aos-duration="2000" alt="Project 3 Cover">
+                  <div class="overlay-text">Skull-capz</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Fourth work block -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <!-- Individual work item -->
+            <div class="work">
+              <!-- Content for the fourth work block -->
+              <a href="https://rdsherpa.github.io/Foster-Page/">
+                <div class="work-overlay">
+                  <img src="img/Foster-Pet.png" data-aos="fade-down" data-aos-duration="2000" alt="Project 4 Cover">
+                  <div class="overlay-text">Foster-Pet</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials-->
+  <section id="testimonials">
+    <div id="testimonials-target"></div>
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial">
+              <p>"Riwa transformed our website beyond our expectations. His personalized approach and expertise resulted
+                in a
+                stunning online presence that truly reflects our flower shop's essence. We're incredibly grateful for
+                their
+                exceptional work."</p>
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+              </div>
+              <p class="author">Francine Miller</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <p>"I couldn't be happier with the website designed by Riwa. It perfectly captures the essence of our
+                bakery business
+                and has significantly boosted our online presence. Riwa's professionalism and creativity are unmatched."
+              </p>
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+              <p class="author">Katie Crawford</p>
+            </div>
+          </div>
+          <!-- Add more carousel items for additional testimonials -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div id="contact-target"></div>
+    <div class="container">
+      <h1 class="text-center">Contact</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="https://formspree.io/f/xrgnqlvz" method="POST">
+            <div class="mb-3">
+              <label for="first-name" class="form-label">First Name:</label>
+              <input type="text" class="form-control" id="first-name" name="First Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" name="Last Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message:</label>
+              <textarea class="form-control" id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <h2 class="text-center mt-5" data-aos="flip-left" data-aos-duration="2000">Let's Connect</h2>
+      <p class="text-center">If you're interested in collaborating or just want to say hello, feel free to reach out to
+        me through any of the following channels:</p>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <a href="https://www.linkedin.com/in/riwa-dorjee-sherpa-12bb2822b/" target="_blank" class="social-icon">
+            <i class="bi bi-linkedin icon fs-4"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="https://github.com/rdsherpa?tab=repositories" target="_blank" class="social-icon">
+            <i class="bi bi-github icon fs-4"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="https://www.instagram.com/sherpa_ryu/" target="_blank" class="social-icon">
+            <i class="bi bi-instagram icon fs-4"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+      <p class="text-center mt-3">I'm always open to connecting with fellow developers, designers, and anyone passionate
+        about technology. Whether you have a project in mind or just want to chat about the latest trends in web
+        development, I'd love to hear from you!</p>
+    </div>
+  </section>
+
+
+
+  <!-- Bootstrap Carousel Section -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/cristofer-maximilian-NSKP7Gwa_I0-unsplash.jpg" class="d-block w-100" alt="...">
+        <!-- I removed the "d-none, because it did not allow us to display caption in mobile size" -->
+        <div class="carousel-caption d-md-block">
+          <h5>Empowerment</h5>
+          <p>"You embarked on the journey of web development to craft digital experiences that empower, inspire, and
+            connect people across the globe, one line of code at a time."</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/katrina-wright-yMg_SMqfoRU-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Believe</h5>
+          <p>"With unwavering faith, you'll navigate every challenge and soar to new heights."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/manasvita-s-9q5vptiE2TY-unsplash.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Embracing Significance</h5>
+          <p>"Life's brevity is a reminder to focus on meaningful endeavors that leave a lasting impact".</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+  <!-- Footer section -->
+  <section id="footer-section">
+    <div class="footer">
+      <div class="footer-content">
+        &copy; Riwa Dorjee Sherpa 2024
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 
+  		TODO: Paste Bootstrap JavaScript script tag from:
+      https://getbootstrap.com/docs/5.3/getting-started/introduction/
+  	-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+
+    </script>
+
+  <!-- Animation Scroll link -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
