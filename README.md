@@ -26,7 +26,7 @@ This portfolio website was built using a variety of technologies and skills, inc
 
 ## Installation
 
-There is no installation required to view the website. Simply visit [Riwa Sherpa's Portfolio](#) to access the live version.
+There is no installation required to view the website. Simply visit [Riwa Sherpa's Portfolio](https://rdsherpa.github.io/My-Protfolio-Website/) to access the live version.
 
 ## Usage
 
